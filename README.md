@@ -19,3 +19,8 @@ This project is a responsive marketing landing page for a fictional wearable dev
 ## Live Demo
 
 👉 [View Live Demo](https://elevvopaths-task-5-landing-page.vercel.app/)
+
+## Designs
+
+![Light theme](./public/light.png)
+![Dark theme](./public/dark.png)

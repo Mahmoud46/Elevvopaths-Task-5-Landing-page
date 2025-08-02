@@ -14,7 +14,7 @@ export default function App(): ReactNode {
 
 	useEffect(() => {
 		applyTheme(dataTheme);
-	}, [dataTheme]);
+	}, []);
 
 	return (
 		<>

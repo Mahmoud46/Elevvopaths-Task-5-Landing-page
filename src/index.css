@@ -39,3 +39,9 @@ html {
 	-webkit-backdrop-filter: blur(10px);
 	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 }
+
+.copy {
+	text-align: center;
+	color: var(--fg-gray-color);
+	font-size: 0.8rem;
+}

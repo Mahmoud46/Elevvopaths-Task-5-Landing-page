@@ -1,0 +1,126 @@
+.testimonials {
+	background: var(--sb-color);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 2rem;
+
+	h1 {
+		color: var(--fg-color);
+		margin-bottom: 1rem;
+		font-size: 3rem;
+		font-weight: 400;
+		text-align: center;
+	}
+	.description {
+		text-align: center;
+		max-width: 700px;
+		color: var(--fg-gray-color);
+		font-size: 1rem;
+	}
+
+	.testimonials-container {
+		display: flex;
+		justify-content: center;
+		margin-top: 2rem;
+		gap: 1rem;
+		width: 100%;
+		overflow-x: auto;
+
+		@media (max-width: 500px) {
+			justify-content: start;
+		}
+		.card {
+			height: 25rem;
+			width: 5rem;
+			position: relative;
+			cursor: pointer;
+			overflow: hidden;
+			transition: 0.5s ease-in-out all;
+			border-radius: 2rem;
+			flex: 0 0 auto;
+			img {
+				position: absolute;
+				height: 100%;
+				width: 100%;
+				object-fit: cover;
+				z-index: 1;
+				transition: 0.5s ease-in-out all;
+			}
+
+			.version {
+				position: absolute;
+				z-index: 4;
+				transform: scale(0);
+				top: 0.5rem;
+				left: 0.5rem;
+				font-size: 0.7rem;
+				border-radius: 1rem;
+				padding: 0.2rem 1rem;
+				color: var(--fg-color);
+				border: var(--fg-color) 1px solid;
+				transition: 0.5s ease-in-out all;
+			}
+
+			.info {
+				position: absolute;
+				display: flex;
+				flex-direction: column;
+				justify-content: end;
+				z-index: 3;
+				height: 100%;
+				bottom: -200%;
+				padding: 0.5rem;
+				h3 {
+					color: var(--fg-color);
+					font-size: 1.5rem;
+					font-weight: 400;
+					margin-top: 1rem;
+				}
+
+				.role {
+					color: var(--fg-gray-color);
+					font-size: 0.9rem;
+				}
+
+				.quote {
+					color: var(--fg-color);
+					display: flex;
+					flex-direction: column;
+					p {
+						padding-left: 1rem;
+					}
+					span {
+						&:last-child {
+							width: fit-content;
+							align-self: end;
+							transform: rotate(180deg);
+						}
+					}
+				}
+
+				transition: 0.5s ease-in-out all;
+			}
+			&:hover {
+				width: 20rem;
+				border-radius: 1rem;
+
+				.version {
+					position: absolute;
+					z-index: 4;
+
+					transform: scale(1);
+				}
+
+				.info {
+					bottom: 0;
+				}
+				img {
+					filter: blur(15px);
+					scale: 1.3;
+				}
+			}
+		}
+	}
+}

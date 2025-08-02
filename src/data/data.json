@@ -1,0 +1,67 @@
+{
+	"testimonials": [
+		{
+			"id": "680f50aaf10f3cd28382ecf2",
+			"name": "Ahmed Hassan",
+			"email": "ahmed.hassan1992@gmail.com",
+			"role": "Digital Operations Strategist",
+			"edition": "VitaLoop One | Core",
+			"avatar": "https://i.postimg.cc/Mpz77prD/ahmed-hassan.jpg",
+			"quote": "VitaLoop One helps me manage stress during intense project cycles. It nudges me when I need to slow down — like a partner that actually pays attention."
+		},
+		{
+			"id": "680f50e4f10f3cd28382ecf9",
+			"name": "Sara Ibrahim",
+			"email": "sara.ibrahim1994@outlook.com",
+			"role": "Neuro-Informed Software Engineer",
+			"edition": "VitaLoop One | Neuro",
+			"avatar": "https://i.postimg.cc/prY9rDxt/sara-ibrahim.jpg",
+			"quote": "I use VitaLoop to keep my cognitive state in check during long coding sprints. It senses my mental fatigue and gently suggests when to breathe or reset."
+		},
+		{
+			"id": "680f510af10f3cd28382ed01",
+			"name": "Mahmoud ElSayed",
+			"email": "mahmoud.elsayed1984@icloud.com",
+			"role": "Cognitive Team Architect",
+			"edition": "VitaLoop One | Core",
+			"avatar": "https://i.postimg.cc/8PNJ3nBk/mahmoud-elsayed.jpg",
+			"quote": "The way VitaLoop One detects team stress trends through shared feedback is mind-blowing. I can lead with clarity, not just instinct."
+		},
+		{
+			"id": "680f5137f10f3cd28382ed10",
+			"name": "Khaled Mostafa",
+			"email": "khaled.mostafa1989@yahoo.com",
+			"role": "Human-Centered Systems Designer",
+			"edition": "VitaLoop One | Core",
+			"avatar": "https://i.postimg.cc/FKjT9BqW/khaled-mostafa.jpg",
+			"quote": "The soft ambient pulses on VitaLoop help me stay grounded during creative blocks. It feels like my wrist is guiding me back to flow."
+		},
+		{
+			"id": "680f516cf10f3cd28382ed11",
+			"name": "Yasmine Adel",
+			"email": "yasmine.adel2002@icloud.com",
+			"role": "Multimodal Experience Strategist",
+			"edition": "VitaLoop One | Active",
+			"avatar": "https://i.postimg.cc/CxKZMBQW/yasmine-adel.jpg",
+			"quote": "Campaign weeks can get chaotic — but VitaLoop helps me balance energy and focus without burning out. It’s like my own rhythm coach."
+		}
+	],
+
+	"products": [
+		{
+			"name": "VitaLoop One | Core",
+			"price_usd": 499,
+			"description": "Your intelligent daily companion. Engineered for wellness, focus, and recovery."
+		},
+		{
+			"name": "VitaLoop One | Active",
+			"price_usd": 649,
+			"description": "Built for movement, speed, and performance. Trusted by athletes and high performers."
+		},
+		{
+			"name": "VitaLoop One | Neuro",
+			"price_usd": 699,
+			"description": "Designed for neuroadaptive wellness. For users who demand deeper emotional intelligence and sensory awareness."
+		}
+	]
+}

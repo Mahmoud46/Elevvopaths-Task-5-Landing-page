@@ -1,6 +1,7 @@
 import { useEffect, useState, type ReactNode } from "react";
 import styles from "./Header.module.scss";
 import { FiMoon, FiSun } from "react-icons/fi";
+import { toggleTheme } from "../../libs/utils";
 
 export default function Header({
 	dataTheme,
@@ -27,7 +28,10 @@ export default function Header({
 			>
 				<h2 className={styles["brand-logo"]}>VitaLoop One</h2>
 				<button
-					onClick={() => setDataTheme(dataTheme == "light" ? "dark" : "light")}
+					onClick={() => {
+						setDataTheme((prev) => (prev == "dark" ? "light" : "dark"));
+						toggleTheme();
+					}}
 				>
 					{dataTheme == "dark" ? <FiSun fill="1" /> : <FiMoon fill="1" />}
 				</button>

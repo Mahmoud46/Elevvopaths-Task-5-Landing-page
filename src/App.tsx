@@ -9,7 +9,7 @@ import { applyTheme } from "./libs/utils";
 
 export default function App(): ReactNode {
 	const [dataTheme, setDataTheme] = useState<"dark" | "light">(
-		localStorage.getItem("data-theme") as "dark" | "light"
+		localStorage.getItem("data-theme") as "dark" | "light" | "dark"
 	);
 
 	useEffect(() => {
@@ -24,6 +24,7 @@ export default function App(): ReactNode {
 			<Testimonials />
 			<Price />
 			<CTA />
+			<p className="copy">&copy; 2025 Mahmoud Zakaria. All rights reserved.</p>
 		</>
 	);
 }

@@ -9,7 +9,7 @@ import { applyTheme } from "./libs/utils";
 
 export default function App(): ReactNode {
 	const [dataTheme, setDataTheme] = useState<"dark" | "light">(
-		localStorage.getItem("data-theme") as "dark" | "light" | "dark"
+		(localStorage.getItem("data-theme") as "dark" | "light") ?? "dark"
 	);
 
 	useEffect(() => {

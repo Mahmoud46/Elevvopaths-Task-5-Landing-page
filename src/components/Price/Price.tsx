@@ -7,7 +7,7 @@ import data from "../../data/data.json";
 export default function Price(): ReactNode {
 	const [productIndex, setProductIndex] = useState<number>(1);
 	return (
-		<section className={styles.price}>
+		<section className={styles.price} id="price">
 			<h1>Choose Your Loop</h1>
 			<p className={styles.description}>
 				Three editions. One future-ready platform. Designed to match your body,
@@ -32,7 +32,13 @@ export default function Price(): ReactNode {
 					<button>Get {data.products[productIndex].name.split("|")[1]}</button>
 				</div>
 				<div className={styles.selector}>
-					<button>
+					<button
+						onClick={() =>
+							setProductIndex(
+								productIndex == 0 ? data.products.length - 1 : productIndex - 1
+							)
+						}
+					>
 						<FiArrowLeft />
 					</button>
 					<p>{data.products[productIndex].name.split("|")[1]}</p>

@@ -11,12 +11,14 @@ export default function CTA(): ReactNode {
 				VitaLoop One is more than a wearable — it's the beginning of a more
 				connected you.
 			</p>
-			<button>
-				<i>
-					<FiArrowRight />
-				</i>
-				<span>Choose Your Edition</span>
-			</button>
+			<a href="#price">
+				<button>
+					<i>
+						<FiArrowRight />
+					</i>
+					<span>Choose Your Edition</span>
+				</button>
+			</a>
 
 			<div className={styles["img-cont"]}>
 				<img src={bgImage} alt="bg" loading="lazy" />
